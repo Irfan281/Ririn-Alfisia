@@ -13,9 +13,26 @@
     filter: drop-shadow(2px 6px 25px rgba(0, 0, 0, 0.05));
 }
 
-.container { 
-    padding-left: 8%;
-    padding-right: 8%;
+#informasi {
+    padding-left: 5.8vw;
+    padding-right: 5.8vw;
+}
+
+#kontak {
+    padding-left: 5.8vw;
+    padding-right: 5.8vw;
+}
+
+@media only screen and (max-width: 768px) {
+    #informasi {
+        padding-left: 3.8vw;
+        padding-right: 3.8vw;
+    }
+    
+    #kontak {
+        padding-left: 3.8vw;
+        padding-right: 3.8vw;
+    }
 }
 
 label{
@@ -34,7 +51,7 @@ input {
 #page-container {
     position: relative;
     min-height: 100vh;
-  }
+}
   
 #content-wrap {
     padding-bottom: 2.5rem;    /* Footer height */

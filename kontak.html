@@ -22,85 +22,79 @@
     
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    
     <title>Kontak | RirinAlfisia</title>
   </head>
   <body>
     <div id="page-container">
         <div id="content-wrap">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent pb-5">
-                <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <div id="box-navbar" class="py-2 my-3">
-                        <ul class="navbar-nav my-2">
-                            <li class="nav-item px-4 mx-4">
-                            <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item px-4 mx-4">
-                            <a class="nav-link" href="portofolio.html">Portofolio</a>
-                            </li>
-                            <li class="nav-item px-4 mx-4">
-                            <a class="nav-link" href="layanan.html">Layanan</a>
-                            </li>
-                            <li class="nav-item px-4 mx-4">
-                            <a class="nav-link" href="lokasi.html">Lokasi</a>
-                            </li>
-                            <li class="nav-item box-nav-item">
-                                <a class="nav-link active" href="kontak.html">Kontak</a>
-                            </li>
-                        </ul>
+        <!-- Navbar -->
+        <nav class="fixed-top">
+            <div class="container pt-4">
+                <div class="row align-items-center text-center" id="navbox">
+                    <div class="col">
+                        <a  href="index.html"><i class="bx bxs-home"></i><span>Home</span></a>
                     </div>
-                </div>
-                </div>
-            </nav>
-            <!-- Akhir Navbar -->
-
-            <!-- Card Informasi -->
-            <div class="container">
-                <div class="px-lg-5 mx-lg-4">
-                    <div class="alert alert-info rounded-3 mt-5 p-2" role="alert">
-                        <p class="mb-0 ms-5"><i class="text-warning bi bi-info-circle-fill"></i>&nbsp;&nbsp;Silakan mengontak kami melalui form berikut yang akan diteruskan melalui Whatsapp</p>
+                    <div class="col">
+                        <a href="portofolio.html"><i class="bx bxs-medal"></i><span>Portofolio</span></a>
+                    </div>
+                    <div class="col">
+                        <a href="layanan.html"><i class="bx bx-list-ol"></i><span>Layanan</span></a>
+                    </div>
+                    <div class="col">
+                        <a href="lokasi.html"><i class="bx bxs-map-alt"></i><span>Lokasi</span></a>
+                    </div>
+                    <div class="col">
+                        <a class="active" href="kontak.html"><i class="bx bxs-chat"></i><span>Kontak</span></a>
                     </div>
                 </div>
             </div>
-            <!-- Akhir Card Informasi -->
+        </nav>
+        <!-- Akhir Navbar -->
 
-            <!-- Form Kontak -->
-            <form class="container" onsubmit="event.preventDefault(); sendWhatsapp();" style="margin-bottom: 8rem;">
-                <div class="px-lg-5 mx-lg-4">
-                    <div class="card mt-3" id="form-kontak">
-                        <div class="m-md-5 m-4">
-                            <div class="mb-3">
-                                <label class="form-label">Nama</label>
-                                <input type="nama" class="form-control" id="nama" placeholder="Masukkan nama anda">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Perihal</label>
-                                <input type="perihal" class="form-control" id="perihal" placeholder="Masukkan perihal pesan">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Pesan</label>
-                                <textarea rows="5" type="pesan" class="form-control" id="pesan" placeholder="Masukkan pesan"></textarea>
-                            </div>
-                            <button class="btn btn-orange fw-normal py-2 px-3 mt-3 float-end"></i><i class="bi bi-whatsapp"></i>&nbsp;&nbsp;Kontak Saya</i></button>
-                        </div>
-                    </div>
+        <!-- Card Informasi -->
+        <div id="informasi" class="container" style="padding-top: 8rem;">
+            <div class="px-lg-5 mx-lg-4">
+                <div class="alert alert-info rounded-3 mt-5 p-2" role="alert">
+                    <p class="mb-0 ms-5"><i class="text-warning bi bi-info-circle-fill"></i>&nbsp;&nbsp;Silakan mengontak kami melalui form berikut yang akan diteruskan melalui Whatsapp</p>
                 </div>
-            </form>
-            <!-- Akhir Form Kontak -->
+            </div>
         </div>
+        <!-- Akhir Card Informasi -->
 
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="container text-center">
-                <p class="fw-light text-white mt-2">Ririn Alfisia  &copy; 2021</p>
+        <!-- Form Kontak -->
+        <form id="kontak" class="container" onsubmit="event.preventDefault(); sendWhatsapp();" style="margin-bottom: 8rem;">
+            <div class="px-lg-5 mx-lg-4">
+                <div class="card mt-3" id="form-kontak">
+                    <div class="m-md-5 m-4">
+                        <div class="mb-3">
+                            <label class="form-label">Nama</label>
+                            <input type="nama" class="form-control" id="nama" placeholder="Masukkan nama anda">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Perihal</label>
+                            <input type="perihal" class="form-control" id="perihal" placeholder="Masukkan perihal pesan">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Pesan</label>
+                            <textarea rows="5" type="pesan" class="form-control" id="pesan" placeholder="Masukkan pesan"></textarea>
+                        </div>
+                        <button class="btn btn-orange fw-normal py-2 px-3 mt-3 float-end"></i><i class="bi bi-whatsapp"></i>&nbsp;&nbsp;Kontak Saya</i></button>
+                    </div>
+                </div>
             </div>
-        </footer>
-        <!-- Akhir Footer -->
+        </form>
+        <!-- Akhir Form Kontak -->
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container text-center">
+            <p class="fw-light text-white mt-2">Ririn Alfisia  &copy; 2021</p>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
     </div>
     
     
