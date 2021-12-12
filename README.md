@@ -6,6 +6,6 @@ Website Ririn Alfisia merupakan sebuah website Personal dari Ririn Alfisia Yahya
 https://ririnalfisia.vercel.app/
 
 ## Kelompok B
-- Muhammad Irfan (1908107010036)
-- Sayidatul Sufur (1908107010019)
-- Daffaq Syafiq Pasha (1908107010077)
+- [Muhammad Irfan](https://github.com/Irfan281) (1908107010036)
+- [Sayidatul Sufur](https://github.com/sayidatul) (1908107010019)
+- [Daffaq Syafiq Pasha](https://github.com/Daffaq43) (1908107010077)
